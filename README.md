@@ -1,6 +1,10 @@
 # nba_2021
 
-The dataset I will be using for my Code Louisville Python project is NBA Team Stats from the 2000-2021 season.
+The dataset I will be using for my Code Louisville Python project is NBA Team Stats from the 2000-2021 season. One of my favorite hobbies is playing basketball. The NBA's game has evolved today into a 3 point shooting and the questions I want to ask are:
+1. At what point in time did the 3pt shot start dramatically increasing?
+2. What percentage of the total average points scored come from 3's compared to free throws and 2 point shots?
+3. How much did the 3 point attempt increase compared to total field goal attempts over the years?
+4. Does increasing 3's increases your winning percentage?
 
 The features I plan to implement are:
 
@@ -10,3 +14,4 @@ The features I plan to implement are:
 4. Create 3 or more unit tests for your application. 
 5. Use pandas, matplotlib, and/or numpy to perform a data analysis project. Ingest 2 or more pieces of data, analyze that data in some manner, and display a new result to a graph, chart, or other display.
 6. Use a Jupyter notebook to document your data analysis.
+
