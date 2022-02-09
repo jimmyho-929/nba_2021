@@ -1,10 +1,10 @@
 # nba_2021
 
-The dataset I will be using for my Code Louisville Python project is NBA Team Stats from the 2000-2021 season. One of my favorite hobbies is playing basketball. The NBA's game has evolved today into a 3 point shooting and the questions I want to ask are:
+The dataset I will be using for my Code Louisville Python project is NBA Team Stats from the 2000-2021 season. One of my favorite hobbies is playing basketball. The NBA's game has evolved today into a higher volume of 3 pointers and the questions I want to ask are:
 1. At what point in time did the 3pt shot start dramatically increasing?
 2. What percentage of the total average points scored come from 3's compared to free throws and 2 point shots?
 3. How much did the 3 point attempt increase compared to total field goal attempts over the years?
-4. Does increasing 3's increases your winning percentage?
+4. Does shooting more 3's correlate to a higher winning percentage?
 
 The features I plan to implement are:
 
