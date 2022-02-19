@@ -9,6 +9,6 @@ def scatter_chart():
     df_3PA = pd.DataFrame(df_3PAavg)
     df_3PA.reset_index(inplace=True)
     df_3PA.columns=['SEASON', '3PA']
-    #print(df_3PA)
-    df_3PA.plot(x='SEASON', y='3PA', kind='scatter')
+    # print(type(df_3PA))
+    df_3PA.plot(x='SEASON', y='3PA', kind='scatter', rot=45)
     plt.show()

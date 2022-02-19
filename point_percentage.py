@@ -21,6 +21,6 @@ def point_percentage_chart():
     PTSpcnt_by_2_avg.name = 'Pt%_by_2'
 
     df_avg = pd.concat([PTSpcnt_by_FT_avg, PTSpcnt_by_2_avg, PTSpcnt_by_3_avg], axis=1)
-    print(df_avg)
-
-point_percentage_chart()
+    
+    df_avg.plot.bar()
+    plt.show()
