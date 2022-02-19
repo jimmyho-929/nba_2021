@@ -10,5 +10,5 @@ def scatter_chart():
     df_3PA.reset_index(inplace=True)
     df_3PA.columns=['SEASON', '3PA']
     # print(type(df_3PA))
-    df_3PA.plot(x='SEASON', y='3PA', kind='scatter', rot=45)
+    df_3PA.plot(x='SEASON', y='3PA', kind='scatter', rot=45, title='NBA Mean 3pt Attempts By Season')
     plt.show()

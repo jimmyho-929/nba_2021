@@ -14,13 +14,13 @@ def point_percentage_chart():
     stats_df = stats_df.assign(PTSpct_from_2 = stats_df['Pts_from_2'] / series_PTS * 100)
 
     PTSpcnt_by_3_avg = stats_df.groupby('SEASON')['Pts_from_3'].aggregate(np.mean)
-    PTSpcnt_by_3_avg.name = 'Pt%_by_3'
+    PTSpcnt_by_3_avg.name = 'By 3'
     PTSpcnt_by_FT_avg = stats_df.groupby('SEASON')['Pts_from_FT'].aggregate(np.mean)
-    PTSpcnt_by_FT_avg.name = 'Pt%_by_FT'
+    PTSpcnt_by_FT_avg.name = 'By FT'
     PTSpcnt_by_2_avg = stats_df.groupby('SEASON')['Pts_from_2'].aggregate(np.mean)
-    PTSpcnt_by_2_avg.name = 'Pt%_by_2'
+    PTSpcnt_by_2_avg.name = 'By 2'
 
     df_avg = pd.concat([PTSpcnt_by_FT_avg, PTSpcnt_by_2_avg, PTSpcnt_by_3_avg], axis=1)
     
-    df_avg.plot.bar()
+    df_avg.plot.bar(title='NBA Mean Percentage Of Points Scored By Category')
     plt.show()
