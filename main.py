@@ -1,7 +1,6 @@
-from scatter import scatter_chart
-from point_percentage import point_percentage_chart
-from attempt_percentage import attempt_percentage_chart
+def main():
+    import scatter 
+    import point_percentage 
+    import attempt_percentage 
 
-scatter_chart()
-point_percentage_chart()
-attempt_percentage_chart()
+main()
