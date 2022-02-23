@@ -7,8 +7,6 @@ season = input('From the 2000 to 2021 season, which season would you like to see
 pattern = re.compile('^20[0-2][0-9]\-[0-2][0-9]')
 
 if pattern.match(season):
-    season = season
-
     # import dataset with specific columns
     stats_df = pd.read_csv('dataset/nba_team_stats_00_to_21.csv', usecols=['TEAM', '_3PA', 'FGA', 'SEASON'])
 
@@ -16,7 +14,7 @@ if pattern.match(season):
     series_3PA = stats_df['_3PA']
     series_FGA = stats_df['FGA']
 
-    # create new series
+    # create new series and add to dataframe
     stats_df = stats_df.assign(Threes_Att_Pcnt = (series_3PA / series_FGA) * 100)
     stats_df = stats_df.assign(Twos_Att_Pcnt = 100 - stats_df['Threes_Att_Pcnt'])
 
