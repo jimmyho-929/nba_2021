@@ -6,9 +6,12 @@ import re
 season = input('From the 2000 to 2021 season, which season would you like to see the percentage of 3pt attempts compared to total shot attempts? (ex: 2000-01) ')
 pattern = re.compile('^20[0-2][0-9]\-[0-2][0-9]')
 
-if pattern.match(season):
+if season == '2020-21':
+    print('The data from  this season is missing. Try a different season.')
+    
+elif pattern.match(season):
     # import dataset with specific columns
-    stats_df = pd.read_csv('dataset/nba_team_stats_00_to_21.csv', usecols=['TEAM', '_3PA', 'FGA', 'SEASON'])
+    stats_df = pd.read_csv('nba_2021/dataset/nba_team_stats_00_to_21.csv', usecols=['TEAM', '_3PA', 'FGA', 'SEASON'])
 
     # select series
     series_3PA = stats_df['_3PA']
@@ -26,6 +29,7 @@ if pattern.match(season):
 
     df_shot_attempts.plot.bar(x='TEAM', stacked=True, title=f'3pt Attempts Vs. 2pt Attempts {season} Season')
     plt.show()
+    
 else:
     print(f'{season} was entered incorrectly. Try again.')
 
