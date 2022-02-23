@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 #      ✅ Category 2: Utilize External Data 
 #      Read data from an external file, such as text, JSON, CSV, etc, and use that data in your application.
-stats_df = pd.read_csv('nba_2021/dataset/nba_team_stats_00_to_21.csv')
+stats_df = pd.read_csv('dataset/nba_team_stats_00_to_21.csv')
 
 # create Series that shows average 3pt attempt by season as a whole
 df_3PAavg = stats_df.groupby('SEASON')['_3PA'].aggregate(np.mean)

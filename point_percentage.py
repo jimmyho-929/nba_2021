@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # import dataset with specific columns
-stats_df = pd.read_csv('nba_2021/dataset/nba_team_stats_00_to_21.csv', usecols=['TEAM', 'PTS', '_3PM', 'FTM', 'SEASON'])
+stats_df = pd.read_csv('dataset/nba_team_stats_00_to_21.csv', usecols=['TEAM', 'PTS', '_3PM', 'FTM', 'SEASON'])
 
 # create series 
 series_3PM = stats_df['_3PM']

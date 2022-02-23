@@ -11,7 +11,7 @@ if season == '2020-21':
     
 elif pattern.match(season):
     # import dataset with specific columns
-    stats_df = pd.read_csv('nba_2021/dataset/nba_team_stats_00_to_21.csv', usecols=['TEAM', '_3PA', 'FGA', 'SEASON'])
+    stats_df = pd.read_csv('dataset/nba_team_stats_00_to_21.csv', usecols=['TEAM', '_3PA', 'FGA', 'SEASON'])
 
     # select series
     series_3PA = stats_df['_3PA']
