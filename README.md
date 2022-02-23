@@ -13,5 +13,5 @@ The features I plan to implement are:
 
 STRETCH:
 
-5. Use pandas, matplotlib, and/or numpy to perform a data analysis project. Ingest 2 or more pieces of data, analyze that data in some manner, and display a new result to a graph, chart, or other display.
-6. Use a Jupyter notebook to document your data analysis.
+4. Use pandas, matplotlib, and/or numpy to perform a data analysis project. Ingest 2 or more pieces of data, analyze that data in some manner, and display a new result to a graph, chart, or other display.
+5. Use a Jupyter notebook to document your data analysis.
