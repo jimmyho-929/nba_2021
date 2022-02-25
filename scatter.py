@@ -16,5 +16,5 @@ df_3PAavg = stats_df.groupby('SEASON')['_3PA'].aggregate(np.mean)
 df_3PA = pd.DataFrame(df_3PAavg)
 df_3PA.reset_index(inplace=True)
 df_3PA.columns=['SEASON', '3PA']
-df_3PA.plot(x='SEASON', y='3PA', kind='scatter', rot=45, title='NBA Mean 3pt Attempts By Season')
+df_3PA.plot(x='SEASON', y='3PA', kind='scatter', rot=45, title='NBA 3pt Attempts By Season (Mean)')
 plt.show()
