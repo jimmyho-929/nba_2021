@@ -56,5 +56,5 @@ PTSpcnt_by_2_avg.name = 'By 2'
 
 df_avg = pd.concat([PTSpcnt_by_FT_avg, PTSpcnt_by_2_avg, PTSpcnt_by_3_avg], axis=1)
     
-df_avg.plot.bar(title='NBA Mean Percentage Of Points Scored By Category')
+df_avg.plot.bar(stacked=True, title='NBA Mean Percentage Of Points Scored By Category').legend(loc='best',bbox_to_anchor=(1.0, 0.5))
 plt.show()

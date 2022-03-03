@@ -1,5 +1,5 @@
 def main():
-    import scatter 
+    import line 
     import point_percentage 
     import attempt_percentage 
 

@@ -7,7 +7,7 @@ season = input('From the 2000 to 2021 season, which season would you like to see
 pattern = re.compile('^20[0-2][0-9]\-[0-2][0-9]')
 
 if season == '2020-21':
-    print('The data from  this season is missing. Try a different season.')
+    print('The data from this season is missing. Try a different season.')
     
 elif pattern.match(season):
     # import dataset with specific columns
@@ -31,7 +31,7 @@ elif pattern.match(season):
     plt.show()
     
 else:
-    print(f'{season} was entered incorrectly. Try again.')
+    print(f'{season} was entered incorrectly. Try again. (ex: 2000-01)')
 
 
 
