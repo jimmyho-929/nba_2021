@@ -2,14 +2,13 @@
 
 <i> dataset: https://www.kaggle.com/mharvnek/nba-team-stats-00-to-18 </i>
 
-To run this program, first create a virtual environment with the command:
-python3 -m venv virtual-env
+To run this program, first create a virtual environment with the command: python3 -m venv virtual-env
 
-After creating the virtual environment, activate it on Mac/Linux with the command source tutorial-env/bin/activate. For Windows: virtual-env\Scripts\activate.bat
+After creating the virtual environment, activate it on Mac/Linux with the command: source virtual-env/bin/activate. For Windows: virtual-env\Scripts\activate.bat
 
-After activating the virtual environment, install packages in the requirements.txt file using python -m pip install -r requirements.txt
+After activating the virtual environment, install packages in the requirements.txt file using: python -m pip install -r requirements.txt
 
-Finally, run python main.py 
+Finally, run: python main.py 
 
 The dataset I will be using for my Code Louisville Python project is NBA Team Stats from the 2000-2021 season. <br>
 The NBA's game has evolved today into a higher volume of 3 pointers and the questions I want to ask are:
