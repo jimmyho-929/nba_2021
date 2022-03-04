@@ -1,16 +1,18 @@
 # NBA Data Analysis 2021
 
-<i> dataset: https://www.kaggle.com/mharvnek/nba-team-stats-00-to-18 </i>
 
-To run this program, first create a virtual environment with the command: python3 -m venv virtual-env
 
-After creating the virtual environment, activate it on Mac/Linux with the command: source virtual-env/bin/activate. For Windows: virtual-env\Scripts\activate.bat
+To run this program, first create a virtual environment with the command: ```python3 -m venv virtual-env```
 
-After activating the virtual environment, install packages in the requirements.txt file using: python -m pip install -r requirements.txt
+After creating the virtual environment, activate it on Mac/Linux with the command: ```source virtual-env/bin/activate``` 
 
-Finally, run: python main.py 
+For Windows: ``` virtual-env\Scripts\activate.bat ```
 
-The dataset I will be using for my Code Louisville Python project is NBA Team Stats from the 2000-2021 season. <br>
+After activating the virtual environment, install packages in the requirements.txt file using: ```python -m pip install -r requirements.txt```
+
+Finally, run: ```python main.py``` 
+
+The dataset I will be using for my Code Louisville Python project is [NBA Team Stats from the 2000-2021 season](https://www.kaggle.com/mharvnek/nba-team-stats-00-to-18). <br>
 The NBA's game has evolved today into a higher volume of 3 pointers and the questions I want to ask are:
 
   1. At what point in time did the 3pt shot start dramatically increasing?
@@ -19,11 +21,11 @@ The NBA's game has evolved today into a higher volume of 3 pointers and the ques
 
 The features I plan to implement are:
 
-  1. Read data from an external file, such as text, JSON, CSV, etc, and use that data in your application. 
-  2. Visualize data in a graph, chart, or other visual representation of data. 
-  3. The program should utilize a virtual environment and document library dependencies in a requirements.txt file. 
+  - [x] 1. Read data from an external file, such as text, JSON, CSV, etc, and use that data in your application. 
+  - [x] 2. Visualize data in a graph, chart, or other visual representation of data. 
+  - [x] 3. The program should utilize a virtual environment and document library dependencies in a requirements.txt file. 
 
 ## STRETCH:
 
    4. Use pandas, matplotlib, and/or numpy to perform a data analysis project. Ingest 2 or more pieces of data, analyze that data in some manner, and display a new result to a graph, chart, or other display.
-  5. Use a Jupyter notebook to document your data analysis.
+  - [x] 5. Use a Jupyter notebook to document your data analysis.
